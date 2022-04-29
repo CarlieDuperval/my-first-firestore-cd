@@ -1,20 +1,23 @@
-import admin from "firebase-admin"; // import firebase libary of tools
-
-import serviceAccount from "./credentials.js"; // import the credentials to connect to firebase
+import {restaurantsCol} from './connectDb.js'
 
 
-admin.initializeApp({ // connects to Firebase project
-  credential: admin.credential.cert(serviceAccount)  // creating a certifiicate from our credential = take our credential
-});
-// NOW  we are connected to Our Firebase  project and related services
+// import admin from "firebase-admin"; // import firebase libary of tools
+
+// import serviceAccount from "./credentials.js"; // import the credentials to connect to firebase
 
 
-const db = admin.firestore();// create s shot cut to access a Firestore data base
+// admin.initializeApp({ // connects to Firebase project
+//   credential: admin.credential.cert(serviceAccount)  // creating a certifiicate from our credential = take our credential
+// });
+// // NOW  we are connected to Our Firebase  project and related services
 
-//const restaurantsCol = db.collection("restaurants"); // Shortcut to point to the collection// you can make a short cut
+
+// const db = admin.firestore();// create s shot cut to access a Firestore data base
+
+// //const restaurantsCol = db.collection("restaurants"); // Shortcut to point to the collection// you can make a short cut
 
 
-const restaurantsCol = db.collection('restaurants'); // shorcut to poitn our 
+// const restaurantsCol = db.collection('restaurants'); // shorcut to poitn our 
 
 // restaurantsCol.get()
 // .then( snapshot => {
