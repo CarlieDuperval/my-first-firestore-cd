@@ -1,7 +1,7 @@
-import { restaurantsCol } from "./connectDb";
+import { restaurantsCol } from "./connectDb.js";
 
-
-const restaurant = { // creating an object -- inn this cas a spceific restaurant we want to add to our database
+// creating an object -- inn this cas a spceific restaurant we want to add to our database
+const restaurant = { 
   name: "Mister O1",
   address: "555 fededral hwy suite 5",
   cuisine: "Pizza",
@@ -38,3 +38,7 @@ async function addRestaurant(data) {
   }
 }
 addRestaurant(restaurant2);
+
+
+
+

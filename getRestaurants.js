@@ -38,3 +38,4 @@ restaurantsCol
 })
 .catch(console.error) // equivalent tot 
 
+
